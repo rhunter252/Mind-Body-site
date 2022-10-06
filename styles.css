@@ -20,7 +20,6 @@ body {
 }
 
 body {
-  background: rgb(66, 66, 66);
 }
 
 section {
@@ -115,4 +114,20 @@ nav svg {
   height: 100vh;
   object-fit: cover;
   z-index: -1;
+}
+
+.classes {
+  color: var(--secondary-color);
+  text-align: center;
+  font-family: "orgonite", sans-serif;
+}
+
+.videos video {
+  width: 100%;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.videos h3 {
+  position: absolute;
 }
