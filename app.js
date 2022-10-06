@@ -1,5 +1,12 @@
 const burger = document.querySelector("nav svg");
 const line = document.querySelector(".line");
+const loader = document.getElementById("preloader");
+
+window.addEventListener("load", () => {
+  setTimeout(function () {
+    gsap.fromTo("#preloader", { opacity: 1 }, { opacity: 0, display: "none" });
+  }, 1500);
+});
 
 burger.addEventListener("click", () => {
   if (burger.classList.contains("active")) {
